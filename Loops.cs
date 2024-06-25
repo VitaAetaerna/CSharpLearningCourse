@@ -68,4 +68,21 @@ public class Loops
         }
         
     }
+
+    public void randomNumberGeneration(int iterations, int rangeStart, int rangeEnd)
+    {
+        Random rnd = new Random();
+        int[] numbers = new int[iterations];
+        for (int i = 0; i < iterations; i++)
+        {
+            numbers[i] = rnd.Next(rangeStart, rangeEnd);
+        }
+
+        foreach (int item in numbers)
+        {
+            Console.WriteLine(item);
+        }
+    }
+    
+    
 }

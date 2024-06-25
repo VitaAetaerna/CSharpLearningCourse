@@ -9,7 +9,9 @@ public class Program
     private static readonly int[] _keys = {1, 3, 5};
     private static readonly int[] _value = {3, 5, 7};
     private static readonly string[] _stringULs = { "HaLlO", "WeLt", "LOL" };
-    
+    private static readonly int _iterations = 10;
+    private static readonly int _rangeStart = 15;
+    private static readonly int _rangeEnd = 30;
     // Static Main as Program Entry Point
     public static int Main()
     {
@@ -23,7 +25,7 @@ public class Program
         loops.splitStringsIntoCharacter(_wordsToSplit);
         loops.dictionaryIteration(_keys, _value);
         loops.reversedCaseString(_stringULs);
-        
+        loops.randomNumberGeneration(_iterations, _rangeStart, _rangeEnd);
         // Return 0, Program ran successfully
         return 0;
     }
