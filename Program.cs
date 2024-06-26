@@ -12,6 +12,8 @@ public class Program
     private static readonly int _iterations = 10;
     private static readonly int _rangeStart = 15;
     private static readonly int _rangeEnd = 30;
+    
+    
     // Static Main as Program Entry Point
     public static int Main()
     {
@@ -20,12 +22,20 @@ public class Program
 
         // Instantiate new Instance of Loops Class
         Loops loops = new Loops();
+        // Instantiate Temperature Class
+        Temperature temperature = new Temperature();
+        
+        
         // Call all methods of class Loops
         loops.iterateIntArray(_numberArray);
         loops.splitStringsIntoCharacter(_wordsToSplit);
         loops.dictionaryIteration(_keys, _value);
         loops.reversedCaseString(_stringULs);
         loops.randomNumberGeneration(_iterations, _rangeStart, _rangeEnd);
+        
+        // Call Temperature
+        temperature.TemperatureCalculation();
+        
         // Return 0, Program ran successfully
         return 0;
     }
